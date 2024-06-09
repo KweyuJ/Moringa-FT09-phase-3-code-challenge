@@ -8,6 +8,9 @@ class Article:
         self.author_id = author_id
         self.magazine_id = magazine_id
 
+    def __repr__(self):
+        return f'<Article {self.title}>'    
+
     @property
     def title(self):
         return self._title

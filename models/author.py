@@ -5,6 +5,9 @@ class Author:
         self.id = id
         self.name = name
 
+    def __repr__(self):
+        return f'<Author {self.name}>'    
+
     @property
     def id(self):
         return self._id
